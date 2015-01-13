@@ -2,6 +2,8 @@
 import re
 import wikipedia
 
+# Written by Naoto Ida 
+
 WORDS = ["WIKI", "WIKIPEDIA"]
 
 def handle(text, mic, profile):
@@ -20,7 +22,7 @@ def handle(text, mic, profile):
         mic.say("Okay, what would you like me to look up?")
 
         def sayDefinition(text):
-            mic.say(mic.say(wikipedia.summary(text)))
+            mic.say(mic.say(wikipedia.summary(text, sentences=2)))
 
         sayDefinition(mic.activeListen())
 
