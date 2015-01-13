@@ -6,6 +6,8 @@ import wikipedia
 
 WORDS = ["WIKI", "WIKIPEDIA"]
 
+PRIORITY = 1
+
 def handle(text, mic, profile):
 
 		"""
